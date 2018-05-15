@@ -1,0 +1,51 @@
+
+
+body {
+  font-family: 'Love Ya Like A Sister', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e2e2e2; //light grey
+}
+
+img {
+  align-self: flex-start;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+
+.articles {
+  margin: 5px 70px;
+}
+
+a:hover {
+  font-weight: bold;
+  font-size: larger;
+}
+
+a {
+  color: #996633; //light chocolate-ish brown
+  margin-top: 15px;
+}
+
+a:visited {
+  color: #734d26; //darker brown
+}
+
+
+/*----------Media Queries----------------*/
+/* Desktop style */
+@media screen and (min-width: 768px) {
+  .articles {
+    margin: 0px 445px;
+  }
+}
