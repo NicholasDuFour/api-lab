@@ -13,6 +13,8 @@ img {
   align-self: flex-start;
   display: block;
   margin-bottom: 10px;
+  height: 280px;
+  width: 280px;
 }
 
 .header {
@@ -33,12 +35,12 @@ a:hover {
 }
 
 a {
-  color: #996633; //light chocolate-ish brown
+  color: #593A21; /*dark chocolate-ish brown*/
   margin-top: 15px;
 }
 
 a:visited {
-  color: #734d26; //darker brown
+  color: #734d26; /*darker brown*/
 }
 
 

@@ -3,10 +3,10 @@ $(document).ready (() => {
   $.get("https://www.reddit.com/r/aww/.json", (items) => {
     for (let i = 0; i < 10; i++){
       $("body").append(`
-        <div class="articles">
-         <h3>${items.data.children[i].data.title}</h3>
+        <div class="articles" role="main">
+         <h2>${items.data.children[i].data.title}</h2>
 
-         <img src="${items.data.children[i].data.thumbnail}">
+         <img src="${items.data.children[i].data.thumbnail}" alt="${items.data.children[i].data.title}">
 
          <a href="http://www.reddit.com/${items.data.children[i].data.permalink}">Click here for more!</a>
         </div>
