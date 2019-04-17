@@ -2,8 +2,8 @@
 $(document).ready (() => {
   $.get("https://www.reddit.com/r/aww/.json", (items) => {
     for (let i = 0; i < 10; i++){
-      $("body").append(`
-        <div class="articles" role="main">
+      $("main").append(`
+        <div class="articles">
          <h2>${items.data.children[i].data.title}</h2>
 
          <img src="${items.data.children[i].data.thumbnail}" alt="${items.data.children[i].data.title}">
